@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Burgers - Hamburguesas Gourmet & Cerveza Artesanal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="/api/placeholder/140/80" alt="Wild Burgers Logo" class="logo">
+            <div class="menu-toggle">☰</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li class="close-menu">✕</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="logo.jpeg" alt="Wild Burgers Logo" class="hero-logo">
+            <h1>Hamburguesas Gourmet & Cerveza Artesanal</h1>
+            <p>Disfruta de la mejor experiencia gourmet con nuestras hamburguesas de autor y nuestra selección de cervezas artesanales.</p>
+            <div>
+                <a href="#menu" class="btn">Ver Menú</a>
+                <a href="#contact" class="btn btn-outline">Reservar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Nuestra Historia</h2>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p>En Wild Burgers, la pasión por la gastronomía y la cerveza artesanal se unen para crear una experiencia única. Fundada en 2018, nuestra hamburguesería nació con la visión de revolucionar el concepto tradicional de hamburguesa.</p>
+                    <p>Nos especializamos en hamburguesas gourmet elaboradas con ingredientes de primera calidad, carnes seleccionadas y panes artesanales. Cada creación es una obra maestra culinaria diseñada para satisfacer los paladares más exigentes.</p>
+                    <p>Complementamos nuestra oferta con una cuidada selección de cervezas artesanales que maridan perfectamente con nuestras hamburguesas, creando una experiencia gastronómica completa.</p>
+                </div>
+                <div class="about-img reveal">
+                    <img src="/api/placeholder/600/400" alt="Wild Burgers Restaurant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="section menu">
+        <div class="container">
+            <h2 class="section-title reveal">Nuestro Menú</h2>
+            <div class="menu-tabs reveal">
+                <button class="tab-btn active" data-target="burgers">Hamburguesas</button>
+                <button class="tab-btn" data-target="sides">Acompañamientos</button>
+                <button class="tab-btn" data-target="beers">Cervezas</button>
+                <button class="tab-btn" data-target="desserts">Postres</button>
+            </div>
+            <!-- Sección de hamburguesas -->
+            <div class="menu-items burgers">
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="Classic Wild Burger">
+                    <div class="menu-item-content">
+                        <h3>Classic Wild</h3>
+                        <p>200g de carne Angus, queso cheddar, bacon crujiente, lechuga, tomate y nuestra salsa especial.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$12.90</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="Blue Cheese Burger">
+                    <div class="menu-item-content">
+                        <h3>Blue Cheese</h3>
+                        <p>200g de carne Angus, queso azul, cebolla caramelizada, rúcula y mayonesa de trufa.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$14.50</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="BBQ Wild Burger">
+                    <div class="menu-item-content">
+                        <h3>BBQ Wild</h3>
+                        <p>200g de carne Angus, queso gouda, bacon, aros de cebolla y salsa BBQ casera.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$13.90</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="Veggie Wild Burger">
+                    <div class="menu-item-content">
+                        <h3>Veggie Wild</h3>
+                        <p>Hamburguesa de garbanzos y remolacha, queso vegano, aguacate, lechuga y salsa de yogur.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$12.50</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección de acompañamientos -->
+            <div class="menu-items sides hidden">
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="Papas Fritas">
+                    <div class="menu-item-content">
+                        <h3>Papas Fritas</h3>
+                        <p>Deliciosas papas fritas crujientes con sal marina y hierbas.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$4.50</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="Aros de Cebolla">
+                    <div class="menu-item-content">
+                        <h3>Aros de Cebolla</h3>
+                        <p>Crujientes aros de cebolla acompañados de salsa barbacoa casera.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$5.50</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección de cervezas -->
+            <div class="menu-items beers hidden">
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="IPA Artesanal">
+                    <div class="menu-item-content">
+                        <h3>IPA Artesanal</h3>
+                        <p>Cerveza con intenso aroma a lúpulo, notas cítricas y tropicales.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$6.50</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="Blonde Ale">
+                    <div class="menu-item-content">
+                        <h3>Blonde Ale</h3>
+                        <p>Cerveza suave y refrescante con notas a malta y un toque afrutado.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$5.90</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección de postres -->
+            <div class="menu-items desserts hidden">
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="Brownie con Helado">
+                    <div class="menu-item-content">
+                        <h3>Brownie con Helado</h3>
+                        <p>Brownie casero con nueces, servido caliente con helado de vainilla.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$7.90</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="/api/placeholder/400/200" alt="Cheesecake">
+                    <div class="menu-item-content">
+                        <h3>Cheesecake</h3>
+                        <p>Tarta de queso con base de galleta y coulis de frutos rojos.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$6.90</span>
+                            <a href="#" class="add-btn">Ordenar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Galería</h2>
+            <div class="gallery-container">
+                <div class="gallery-item reveal">
+                    <img src="/api/placeholder/400/400" alt="Wild Burgers Gallery 1">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="/api/placeholder/400/400" alt="Wild Burgers Gallery 2">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="/api/placeholder/400/400" alt="Wild Burgers Gallery 3">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="/api/placeholder/400/400" alt="Wild Burgers Gallery 4">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="/api/placeholder/400/400" alt="Wild Burgers Gallery 5">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="/api/placeholder/400/400" alt="Wild Burgers Gallery 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title reveal">Contáctanos</h2>
+            <div class="contact-container">
+                <div class="contact-info reveal">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span class="contact-text">Av. Hamburguesa 123, Ciudad</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span class="contact-text">+34 123 456 789</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <span class="contact-text">info@wildburgers.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🕒</span>
+                            <span class="contact-text">Lun-Dom: 12:00 - 23:00</span>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">i</a>
+                    </div>
+                </div>
+                <div class="contact-form reveal">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Asunto">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="/api/placeholder/120/60" alt="Wild Burgers Logo">
+                    <p>Disfruta de la mejor experiencia gourmet con nuestras hamburguesas de autor y nuestra selección de cervezas artesanales.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#gallery">Galería</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Horarios</h3>
+                    <ul>
+                        <li>Lunes - Jueves: 12:00 - 23:00</li>
+                        <li>Viernes - Sábado: 12:00 - 01:00</li>
+                        <li>Domingo: 13:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete a nuestra Newsletter</h3>
+                    <p>Recibe nuestras últimas noticias y promociones.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Tu email" required>
+                        <button type="submit" class="newsletter-btn">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Wild Burgers. Todos los derechos reservados. Desarrollado por <a href="https://pedidodirecto.net">pedidodirecto.net</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
