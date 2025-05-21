@@ -113,3 +113,56 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// Funcionalidad para los artículos de noticias
+document.addEventListener('DOMContentLoaded', function() {
+    // Animación para mostrar más texto en las noticias
+    const readMoreLinks = document.querySelectorAll('.read-more');
+    
+    readMoreLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Encuentra el contenedor del artículo
+            const newsContent = this.closest('.news-content');
+            const newsText = newsContent.querySelector('p');
+            
+            // Texto completo (esto sería reemplazado por el contenido real)
+            const fullTexts = {
+                0: "Prueba nuestra nueva creación con jalapeños, queso pepper jack y salsa chipotle. Disponible todo mayo. Esta hamburguesa trae el auténtico sabor mexicano a nuestra carta, con ingredientes seleccionados de la mejor calidad y elaborada con nuestra carne 100% Angus. ¡No te la pierdas!",
+                1: "De lunes a jueves de 18:00 a 20:00, disfruta de nuestras cervezas artesanales con promoción 2x1. Aplica para todas nuestras variedades de cerveza de barril. Una oportunidad perfecta para venir con amigos después del trabajo y descubrir nuevos sabores en un ambiente acogedor.",
+                2: "Este mes realizaremos una cata con 5 variedades exclusivas de cervezas maridadas con tapas especiales. El evento será guiado por nuestro maestro cervecero quien explicará el proceso de elaboración y los matices de cada variedad. Cupo limitado, reserva con anticipación en nuestro local o por teléfono."
+            };
+            
+            // Encuentra el índice del artículo
+            const newsItems = document.querySelectorAll('.news-item');
+            let index = Array.from(newsItems).findIndex(item => item.contains(this));
+            
+            // Alterna entre mostrar más y menos texto
+            if (this.textContent === 'Leer más') {
+                newsText.textContent = fullTexts[index];
+                this.textContent = 'Leer menos';
+            } else {
+                // Restaura el texto corto original
+                const shortTexts = [
+                    "Prueba nuestra nueva creación con jalapeños, queso pepper jack y salsa chipotle. Disponible todo mayo.",
+                    "De lunes a jueves de 18:00 a 20:00, disfruta de nuestras cervezas artesanales con promoción 2x1.",
+                    "Este mes realizaremos una cata con 5 variedades exclusivas de cervezas maridadas con tapas especiales."
+                ];
+                newsText.textContent = shortTexts[index];
+                this.textContent = 'Leer más';
+            }
+        });
+    });
+    
+    // Añade efecto de hover para las noticias
+    const newsItems = document.querySelectorAll('.news-item');
+    newsItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.classList.add('hover');
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            this.classList.remove('hover');
+        });
+    });
+});
